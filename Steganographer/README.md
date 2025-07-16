@@ -1,9 +1,10 @@
-# Steganographer
+# Steganographer Desktop App
 
-Steganographer is a C++ application built with the Qt framework that provides a graphical user interface for performing steganography on BMP and PPM image files. It allows to embed hidden messages within images and extract them later
+Steganographer is a C++ application built with the Qt framework that provides a graphical user interface for performing steganography on BMP and PPM image files. 
+It allows to embed hidden messages within images and extract them later
 
 
-## Features
+## ✨ Features
 
 * **View Image Information**: Display details about BMP and PPM image files, including dimensions, size, and last modified date
 * **Embed Messages**: Hide text messages within BMP (24-bit) and PPM (P3/P6) images
@@ -12,21 +13,63 @@ Steganographer is a C++ application built with the Qt framework that provides a 
 * **Supported Formats**: BMP (24-bit) and PPM (P3 and P6)
 
 
-## How it Works
+## 🤷‍♂️ How it Works 
 
-The application utilizes the Least Significant Bit (LSB) steganography technique. Messages are converted into a binary stream, and each bit of the message replaces the least significant bit of the image's pixel data.
-
-
-## Getting Started
+The application utilizes the Least Significant Bit (LSB) steganography technique. 
+Messages are converted into a binary stream, and each bit of the message replaces the least significant bit of the image's pixel data.
 
 
-### Prerequisites
+## 🛠 Prerequisites
 
   - Qt 5 or Qt 6 development environment
   - CMake 
   - C++ compiler 
 
   
-### Install & Build the project
+## 🚀 Install, Build & Run the project:
 
-    1. Clone or download this repository
+  1. **Clone or download** this repository & navigate to proj. directory:
+
+    git clone https://github.com/Zzorro-Kid/Steganography-App.git
+    cd Steganographer
+
+  2. Build it and Compile:
+
+    mkdir build
+    cd build
+    cmake .. && make
+
+  3. Run the application:
+
+    ./Steganographer
+
+
+## 👨‍💻 Usage  
+
+  The application has 4 main tabs:
+
+   1. File Info:
+
+      - View technical details about image files;
+
+      - Shows format, dimensions, size, and modification date;
+
+   2. Embed Message:
+
+      - Select an image file;
+
+      - Enter your secret message;
+
+      - Click "Embed message" to hide the message in the image;
+
+   3. Extract Message:
+
+      - Select a steganographic image;
+
+      - Click "Extract message" to reveal the hidden content;
+
+   4. Check Capacity:
+
+      - Verify if an image has enough space for your message;
+
+      - Enter a test message to check capacity;
