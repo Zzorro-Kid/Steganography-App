@@ -1,6 +1,6 @@
-# Steganographer Desktop App
+# Steganographer App
 
-Steganographer is a C++ application built with the Qt framework that provides a graphical user interface for performing steganography on BMP and PPM image files. 
+Steganographer is a C++ CLI tool for performing steganography on BMP and PPM image files. 
 It allows to embed hidden messages within images and extract them later
 
 
@@ -13,15 +13,8 @@ It allows to embed hidden messages within images and extract them later
 * **Supported Formats**: BMP (24-bit) and PPM (P3 and P6)
 
 
-## 🤷‍♂️ How it Works 
-
-The application utilizes the Least Significant Bit (LSB) steganography technique. 
-Messages are converted into a binary stream, and each bit of the message replaces the least significant bit of the image's pixel data.
-
-
 ## 🛠 Prerequisites
 
-  - Qt 5 or Qt 6 development environment
   - CMake 
   - C++ compiler 
 
